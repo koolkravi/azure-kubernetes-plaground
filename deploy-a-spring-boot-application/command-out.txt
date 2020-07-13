@@ -1,0 +1,47 @@
+$ kubectl get all -o wide
+NAME                                         READY   STATUS    RESTARTS   AGE     IP           NODE                                NOMINATED NODE   READINESS GATES
+pod/gs-spring-boot-docker-7cf99c679c-zqrwk   1/1     Running   0          3m37s   10.244.1.2   aks-nodepool1-27370952-vmss000001   <none>           <none>
+
+
+NAME                 TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE     SELECTOR
+service/kubernetes   ClusterIP   10.0.0.1     <none>        443/TCP   8m43s   <none>
+
+
+NAME                                    READY   UP-TO-DATE   AVAILABLE   AGE     CONTAINERS              IMAGES                                              SELECTOR
+deployment.apps/gs-spring-boot-docker   1/1     1            1           3m37s   gs-spring-boot-docker   koolkravi.azurecr.io/gs-spring-boot-docker:latest   run=gs-spring-boot-docker
+
+NAME                                               DESIRED   CURRENT   READY   AGE     CONTAINERS              IMAGES                                              SELECTOR
+replicaset.apps/gs-spring-boot-docker-7cf99c679c   1         1         1       3m37s   gs-spring-boot-docker   koolkravi.azurecr.io/gs-spring-boot-docker:latest   pod-template-hash=7cf99c679c,run=gs-spring-boot-docker
+
+
+
+$ kubectl get deploy
+NAME                    READY   UP-TO-DATE   AVAILABLE   AGE
+gs-spring-boot-docker   1/1     1            1           5m18s
+
+
+$ kubectl get services
+NAME         TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
+kubernetes   ClusterIP   10.0.0.1     <none>        443/TCP   10m
+
+
+$ kubectl get replicaset
+NAME                               DESIRED   CURRENT   READY   AGE
+gs-spring-boot-docker-7cf99c679c   1         1         1       5m59s
+
+$ kubectl get ns
+NAME              STATUS   AGE
+default           Active   11m
+kube-node-lease   Active   11m
+kube-public       Active   11m
+kube-system       Active   11m
+
+
+Afte expose deployment as load balanceer
+
+$ kubectl get services -o wide
+NAME                    TYPE           CLUSTER-IP    EXTERNAL-IP     PORT(S)        AGE    SELECTOR
+gs-spring-boot-docker   LoadBalancer   10.0.61.232   52.188.74.159   80:31127/TCP   112s   run=gs-spring-boot-docker
+kubernetes              ClusterIP      10.0.0.1      <none>          443/TCP        13m    <none>
+
+

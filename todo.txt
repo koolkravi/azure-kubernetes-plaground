@@ -1,0 +1,63 @@
+# TODO (READ)
+
+## 1. Spring Microservices Architecture on Azure Kubernetes Service (AKS)
+```
+https://medium.com/javarevisited/spring-boot-microservices-architecture-on-azure-kubernetes-service-aks-2986154f025a
+```
+## 2. Kubernetes : Deploying Angular + Spring Boot Application in Microsoft Azure Cloud
+```
+https://medium.com/@raghavendra.pes/kubernetes-deploying-angular-spring-boot-application-in-microsoft-azure-cloud-dd8fb63419c5
+```
+## 3. Azure-Samples / java-on-aks
+```
+https://github.com/Azure-Samples/java-on-aks
+```
+
+## 4. Deploying microservices to Azure Kubernetes Service
+```
+https://openliberty.io/guides/cloud-azure.html
+```
+
+## 5. LET AZURE DEVOPS DEPLOY A SPRING BOOT APPLICATION TO AZURE KUBERNETES SERVICE
+```
+https://www.yuriburger.net/2019/05/16/let-azure-devops-deploy-a-spring-boot-application-to-azure-kubernetes-service/
+```
+
+## 6. 50 days from zero to  hero with Kubernetes
+```
+https://azure.microsoft.com/mediahandler/files/resourcefiles/kubernetes-learning-path/Kubernetes%20Learning%20Path%20version%201.0.pdf
+
+#6.1 Day 21-25 Microservices architecture design
+Microservices architecture on Azure Kubernetes Service (AKS)
+https://docs.microsoft.com/en-in/azure/architecture/reference-architectures/microservices/aks
+
+Learn about the infrastructure and DevOps
+considerations of running a microservices
+architecture on AKS, including a basic AKS
+configuration that can serve as your starting
+point for most microservices deployments.
+
+#6.2 Day 26 -27 Azure Kubernetes Service workshop
+https://docs.microsoft.com/en-us/learn/modules/aks-workshop/
+Follow a hands-on workshop that takes you through the steps of creating a Kubernetes cluster, deploying a microservices-based application, and setting up a CI/CD pipeline.
+
+#Day 6-15 Azure Kubernetes Service core concepts
+Kubernetes core concepts for Azure Kubernetes Service (AKS)
+https://docs.microsoft.com/en-us/azure/aks/concepts-clusters-workloads
+
+```
+
+## 7. Spring on Azure integration documentation
+```
+https://docs.microsoft.com/en-us/azure/developer/java/spring-framework/
+```
+
+
+
+
+
+
+```
+azure credit
+https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/
+```
