@@ -1,7 +1,6 @@
 # Table of content
 
-## 1-Deploy Spring Boot Application to the Azure Kubernetes Service
-[deploy-a-spring-boot-application](ReadMe Link)
+## [1-Deploy Spring Boot Application to the Azure Kubernetes Service](https://github.com/koolkravi/azure-kubernetes-plaground/tree/master/deploy-a-spring-boot-application)
 
 ## 2. Day 21-25 Microservices architecture design      - TODO
 [Microservices architecture on Azure Kubernetes Service (AKS)] (https://docs.microsoft.com/en-in/azure/architecture/reference-architectures/microservices/aks)
